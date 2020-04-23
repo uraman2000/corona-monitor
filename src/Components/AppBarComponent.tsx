@@ -8,7 +8,7 @@ import { fade, makeStyles } from "@material-ui/core/styles";
 import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search";
 import { RouteChildrenProps, useHistory } from "react-router-dom";
-import { Box, TextField, Container, InputAdornment } from "@material-ui/core";
+import { Box, TextField, Container, InputAdornment, Link } from "@material-ui/core";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 import CovidApiRepository from "../Library/CovidApiRepository";
 import { sort_by } from "../Constants";
@@ -100,11 +100,13 @@ export default function AppBarComponent({ children }: IProps) {
     <div className={classes.root}>
       <AppBar position="fixed">
         <Toolbar>
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="open drawer">
+          {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="open drawer">
             <MenuIcon />
-          </IconButton>
+          </IconButton> */}
           <Typography className={classes.title} variant="h6" noWrap>
-            Material-UI
+            <Link href="/" color="inherit">
+              Corona Monitor
+            </Link>
           </Typography>
 
           <div className={classes.search}>
