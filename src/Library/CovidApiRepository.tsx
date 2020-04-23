@@ -23,7 +23,7 @@ export default class CovidApiRepository {
 
   public static async CountryHistory(country: string) {
     try {
-      const response = await axios.get(`${baseUrl}/v2/historical/${country}`);
+      const response = await axios.get(`${baseUrl}/historical/${country}`);
 
       return response.data;
     } catch (error) {

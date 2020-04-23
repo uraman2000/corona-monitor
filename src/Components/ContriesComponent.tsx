@@ -63,6 +63,8 @@ export default function ContriesComponent() {
     const fetchData = async () => {
       const data = await CovidApiRepository.CountryHistory(state.data.country);
       const labels: any = Object.keys(data.timeline.cases);
+      console.log(labels);
+
       const cases = Object.values(data.timeline.cases);
       const deaths = Object.values(data.timeline.deaths);
       const recovered = Object.values(data.timeline.recovered);

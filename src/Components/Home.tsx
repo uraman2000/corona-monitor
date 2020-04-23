@@ -90,7 +90,7 @@ export default function Home() {
           </Box>
           <Pie data={state.graphData} />
 
-          <NewsComponent />
+          {/* <NewsComponent /> */}
         </Grid>
 
         <Grid item xs={4}>

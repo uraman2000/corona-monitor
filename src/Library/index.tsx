@@ -1,1 +1,1 @@
-export const baseUrl = "https://corona.lmao.ninja";
+export const baseUrl = "https://corona.lmao.ninja/v2";

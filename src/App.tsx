@@ -12,7 +12,7 @@ export default function App() {
         <Router>
           <Switch>
             <AppBarComponent>
-              <Route path="/" component={Home} />
+              <Route path="/" exact component={Home} />
               <Route path="/country/:country" component={ContriesComponent} />
             </AppBarComponent>
 
